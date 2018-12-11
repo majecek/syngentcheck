@@ -29,7 +29,9 @@ const scrape = ()=>
       if (title === 'Go To Home Page of Vendavo - Vendavo, Inc.') {
         console.log('YES!!');
         return db.collection('syngentcheck').add({live: true, timestamp: Date.now()});
+
       }
       return db.collection('syngentcheck').add({live: false, timestamp: Date.now()});
+      // return '';
     });
 //
